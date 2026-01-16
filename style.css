@@ -259,6 +259,26 @@ nav a {
     padding: 15px 0;
     font-size: 14px;
 }
+/* HEADER BASE */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+/* MENU TOGGLE (HIDDEN ON DESKTOP) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+
+
+
+ 
 @media (max-width: 768px) {
     .hero-image .mockup {
         width: 260px;
@@ -276,4 +296,29 @@ nav a {
     .contact-left h2 {
         font-size: 32px;
     }
+      .menu-toggle {
+    display: block;
+  }
+     nav {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: #071826;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  nav a {
+    margin: 12px 0;
+    font-size: 16px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+
 }
